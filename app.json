@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Scan2Golf",
+    "slug": "scan2golf",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0a1628"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.twinaxis.scan2golf",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Scan2Golf uses your camera to capture the golf green terrain for accurate ball physics simulation.",
+        "NSMotionUsageDescription": "Scan2Golf uses motion sensors to detect device orientation during green scanning."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0a1628"
+      },
+      "package": "com.twinaxis.scan2golf"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Scan2Golf to access your camera to scan golf greens."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "your-eas-project-id"
+      }
+    }
+  }
+}
